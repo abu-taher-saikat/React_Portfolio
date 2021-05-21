@@ -1,0 +1,122 @@
+.blog_heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+/* heading section */
+/* nav section */
+
+.project_nav{
+   
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+    padding-bottom: 50px;
+}
+.project_item{
+    padding: 20px;
+}
+/* end */
+.wrapper {
+  display: flex;
+  padding: 0px 100px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 278px;
+  height: 300px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+margin-bottom: 140px;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+ 
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+ 
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+.card .info h1 {
+  margin: 0px;
+}
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.card .info button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.card .info button:hover {
+  background: dodgerblue;
+  color: white;
+}
+.blog-dexcribtion{
+    text-align: center;
+    padding: 0px 10px;
+}
+.something{
+    background-color: gray;
+    position: absolute;
+    top: 60vh;
+    text-align: center;
+}
+
+.blog-list{
+    padding: 1rem!important;
+    position: absolute;
+    width: fit-content;
+    right: 0px;
+    top: 67vh;
+    background: aliceblue;
+}

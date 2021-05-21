@@ -1,18 +1,13 @@
 import './App.css';
-// import TopBar from './Components/NavBar';
-// import Hero from './Sections/Hero';
-// import Work from './Sections/Work';
-import Gallery from './Components/Gallery';
-
+import TopBar from './Components/NavBar';
+import Blog from './Sections/Blog/Blog.js';
 
 
 function App() {
   return (
     <div className="App">
-        {/* <TopBar /> */}
-        {/* <Hero></Hero> */}
-        {/* <Work></Work> */}
-        <Gallery></Gallery>
+        <TopBar />
+        <Blog/>
     </div>
   );
 }
