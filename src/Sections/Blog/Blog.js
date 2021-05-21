@@ -47,7 +47,7 @@ const Blog = (props) => {
       <div className="wrapper">
         {BlogData.map((data) => (
           <div className="card">
-            <img src={data.image} />
+            <img src={data.image} alt="" />
             <div className="info">
               <h1>{data.heading}</h1>
               <p>{data.para}</p>

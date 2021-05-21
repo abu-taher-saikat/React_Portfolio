@@ -1,6 +1,6 @@
 import './App.css';
 import TopBar from './Components/NavBar';
-import Blog from './Sections/Blog/Blog';
+import Blog from './Sections/Blog/Blog.js';
 
 
 function App() {
