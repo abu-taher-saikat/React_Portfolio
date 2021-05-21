@@ -30,12 +30,17 @@
 }
 /* Top Bar */
 
-/* Blog */
-/* .blog .asdjlasd{
-  asdf
+/* Hero */
+.hero {
+  /* height: 100vh; */
+  /* border: 1px solid black; */
 }
 
-.blog .eraf{
-  asdfasd
-} */
-/* Blog */
+.hero .mySwiper {
+  height: 100vh;
+  /* width: 100%; */
+}
+.hero .mySwiper .hero-image {
+  width: 100%;
+}
+/* Hero */
