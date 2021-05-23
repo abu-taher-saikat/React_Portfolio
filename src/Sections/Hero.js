@@ -29,7 +29,10 @@ const Hero = () => {
                 <SwiperSlide>
                     <Image className="hero-image" src={sliderImage} ></Image>
                 </SwiperSlide>
-
+                <div class="overlay-wrap section-head">
+                        <span class="mb-2">Hello, I am</span>
+                        <h1>Justin Lee</h1>
+                </div>
             </Swiper>
         </div>
     )

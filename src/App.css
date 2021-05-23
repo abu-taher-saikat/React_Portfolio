@@ -4,6 +4,11 @@
 
 .TopBar {
   border-bottom: 1px solid gray;
+  position: sticky !important;
+  position: -webkit-sticky;
+  z-index: 10;
+  top: 0;
+  background-color: white;
 }
 .TopBar .links {
   justify-content: flex-end;
@@ -32,8 +37,9 @@
 
 /* Hero */
 .hero {
-  /* height: 100vh; */
-  /* border: 1px solid black; */
+  /* height: 100vh;
+   border: 1px solid black;  */
+  position: relative;
 }
 
 .hero .mySwiper {
@@ -43,8 +49,53 @@
 .hero .mySwiper .hero-image {
   width: 100%;
 }
+
+.hero .section-head {
+  /* display: grid; */
+  position: absolute;
+  top: 50;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* justify-content: center; */
+  /* align-content: center; */
+  z-index: 5;
+  text-shadow: 2px 2px 5px black;
+}
+.hero .section-head span {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-align: center;
+  display: block;
+  color: white;
+}
+.hero .section-head h1 {
+  font-size: 12vh;
+  color: white;
+}
+
+.hero .swiper-pagination-bullet-active {
+  width: 50px !important;
+}
+
+.hero
+  .swiper-container-vertical
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 7px;
+  width: 30px;
+  height: 4px;
+  border-radius: 1px;
+  background: #fff;
+  transition: 1s;
+  display: block;
+  margin: 20px 0 0 auto;
+}
+
 /* Hero */
 
+<<<<<<< HEAD
 
 /* contact form */
 
@@ -74,3 +125,332 @@
 .form_my_control{
   padding-top: 30px;
 }
+=======
+/* Work */
+.work .work_img {
+  width: 400px;
+  height: 500px;
+}
+/* Work */
+
+/* G */
+/* #root {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+} */
+/* 
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+
+/* .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+
+/* G */
+/* section start */
+.section-services {
+  padding-bottom: 80px;
+}
+
+.services-list-icon {
+  font-size: 30px;
+  position: relative;
+  color: #fff;
+}
+
+.services-flip {
+  display: flex;
+  min-height: 270px;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  width: 100%;
+  height: 100%;
+}
+
+.services-flip:hover .services-list {
+  -webkit-transform: rotate3d(1, 0, 0, 180deg);
+  -moz-transform: rotate3d(1, 0, 0, 180deg);
+  -ms-transform: rotate3d(1, 0, 0, 180deg);
+  -o-transform: rotate3d(1, 0, 0, 180deg);
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+
+.services-list {
+  position: relative;
+  transition-property: box-shadow, -webkit-transform;
+  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-transform;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform-style: inherit;
+  -moz-transform-style: inherit;
+  -ms-transform-style: inherit;
+  -o-transform-style: inherit;
+  transform-style: inherit;
+  -webkit-perspective: inherit;
+  -moz-perspective: inherit;
+  -ms-perspective: inherit;
+  -o-perspective: inherit;
+  perspective: inherit;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.services-list h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.flip-content {
+  -webkit-transform: translate3d(0, 0, 60px) scale(0.85);
+  -moz-transform: translate3d(0, 0, 60px) scale(0.85);
+  -ms-transform: translate3d(0, 0, 60px) scale(0.85);
+  -o-transform: translate3d(0, 0, 60px) scale(0.85);
+  transform: translate3d(0, 0, 60px) scale(0.85);
+}
+
+.services-list-front {
+  background-color: #fff;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  -webkit-transform-style: inherit;
+  -moz-transform-style: inherit;
+  -ms-transform-style: inherit;
+  -o-transform-style: inherit;
+  transform-style: inherit;
+  -webkit-perspective: inherit;
+  -moz-perspective: inherit;
+  -ms-perspective: inherit;
+  -o-perspective: inherit;
+  perspective: inherit;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-list-front:before {
+  right: 0;
+  content: "";
+  position: absolute;
+  background: #000;
+  left: 0;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.services-list-front h5 {
+  padding: 11px 20px;
+  background: #fff;
+  font-size: 14px;
+  border-radius: 2px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.services-list-back {
+  -webkit-transform: rotateY(-180deg) rotateZ(-180deg);
+  -moz-transform: rotateY(-180deg) rotateZ(-180deg);
+  -ms-transform: rotateY(-180deg) rotateZ(-180deg);
+  -o-transform: rotateY(-180deg) rotateZ(-180deg);
+  transform: rotateY(-180deg) rotateZ(-180deg);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+  z-index: 1;
+  background: #fd735a;
+  -webkit-transform-style: inherit;
+  -moz-transform-style: inherit;
+  -ms-transform-style: inherit;
+  -o-transform-style: inherit;
+  transform-style: inherit;
+  -webkit-perspective: inherit;
+  -moz-perspective: inherit;
+  -ms-perspective: inherit;
+  -o-perspective: inherit;
+  perspective: inherit;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.services-list-back {
+  -webkit-transform: rotateY(-180deg) rotateZ(-180deg);
+  -moz-transform: rotateY(-180deg) rotateZ(-180deg);
+  -ms-transform: rotateY(-180deg) rotateZ(-180deg);
+  -o-transform: rotateY(-180deg) rotateZ(-180deg);
+  transform: rotateY(-180deg) rotateZ(-180deg);
+}
+
+.services-list-back h5,
+.services-list-back p {
+  color: #fff;
+}
+
+.services-list-1 {
+  background-image: url("./Assets/images/services1.jpg");
+}
+
+.services-list-2 {
+  background-image: url("./Assets/images/services2.jpg");
+}
+
+.services-list-3 {
+  background-image: url("./Assets/images/services3.jpg");
+}
+
+.services-list-4 {
+  background-image: url("./Assets/images/services4.jpg");
+}
+
+.services-list-5 {
+  background-image: url("./Assets/images/services5.jpg");
+}
+
+.services-list-6 {
+  background-image: url("./Assets/images/services6.jpg");
+}
+
+/* section end  */
+
+/* work slider */
+.work::after {
+  display: table;
+  content: "";
+}
+.work .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 250px;
+}
+
+.work .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.work .swiper-slide img {
+  display: block;
+  width: 400px;
+  height: 500px;
+}
+
+.work .text {
+  display: block;
+  text-align: center;
+}
+
+.work .text h5 {
+  padding-bottom: 10px;
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #878d8d;
+}
+
+.work .text h2 {
+  font-size: 30px;
+  z-index: 1;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+}
+/* work slider */
+
+/* reviews  */
+.slider .underlineSlider {
+  display: inline-block;
+  height: 1px;
+  border-radius: 80%;
+  background-image: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgb(165, 165, 165),
+    rgba(0, 0, 0, 0)
+  );
+  width: 200px;
+}
+.slider p {
+  color: rgb(43, 43, 43);
+}
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 150px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+.slider img {
+  border-radius: 20px;
+}
+
+h5.slider-comment {
+  font-size: 17px;
+  line-height: 31px;
+  font-weight: 400;
+  color: #888888;
+  font-family: inherit;
+}
+h6.slider-user {
+  font-size: 14px;
+  color: #5a5959;
+}
+
+/* reviews  */
+>>>>>>> 9986da98c8b7e52fd417d4f0523b68aae7d659b6

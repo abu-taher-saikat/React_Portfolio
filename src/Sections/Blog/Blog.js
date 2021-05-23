@@ -10,7 +10,7 @@ const Blog = (props) => {
     setBlogData(arrProject);
   };
   return (
-    <Fragment>
+    <>
       <div className="blog_heading">
         <p>blog</p>
         <h2>My Article</h2>
@@ -52,16 +52,16 @@ const Blog = (props) => {
               <h1>{data.heading}</h1>
               <p>{data.para}</p>
             </div>
-            <div class="blog-list">
+            {/* <div class="blog-list">
               <p>The single greatest gift to get your</p>
               <span class="d-block text-center mt-3 font-weight-bold blog-cat">
                 Travel
               </span>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
-    </Fragment>
+    </>
   );
 };
 
