@@ -1,6 +1,7 @@
 import './App.css';
 import TopBar from './Components/NavBar';
 import Blog from './Sections/Blog/Blog.js';
+import Contact from './Sections/Contact';
 import Hero from './Sections/Hero';
 import Service from './Sections/Service';
 import Work from './Sections/Work';
@@ -17,6 +18,7 @@ function App() {
         <Blog/>
         <Reviews />
         <Experience />
+        <Contact/>
     </div>
   );
 }
