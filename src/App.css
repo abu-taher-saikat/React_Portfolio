@@ -44,3 +44,33 @@
   width: 100%;
 }
 /* Hero */
+
+
+/* contact form */
+
+.Form_Header{
+  padding-top: 100px;
+  line-height: 75px;
+  text-align: center;
+}
+.form_my_control input{
+  height: 60px;
+}
+.Form_button{
+  text-align: center;
+  /* width: 100px; */
+  padding: 8px 48px;
+  background: #fd735a;
+  font-size: 23px;
+  border-radius: 0px;
+  border: none;
+}
+.Form_textarea{
+  padding-top: 30px;
+}
+.First_row{
+  padding-top: 30px;
+}
+.form_my_control{
+  padding-top: 30px;
+}

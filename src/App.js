@@ -1,6 +1,7 @@
 import './App.css';
 import TopBar from './Components/NavBar';
 import Blog from './Sections/Blog/Blog.js';
+import Contact from './Sections/Contact';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
         <TopBar />
         <Blog/>
+        <Contact/>
     </div>
   );
 }
