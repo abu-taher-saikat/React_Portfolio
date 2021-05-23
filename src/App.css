@@ -326,3 +326,28 @@ body {
 }
 
 /* section end  */
+
+/* work slider */
+.work::after {
+  display: table;
+  content: "";
+}
+.work .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 250px;
+}
+
+.work .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.work .swiper-slide img {
+  display: block;
+  width: 400px;
+  height: 500px;
+}
+/* work slider */
