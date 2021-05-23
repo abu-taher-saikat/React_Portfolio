@@ -16,16 +16,13 @@ function App() {
         <Hero></Hero>
         <TopBar />
         <Service/>
+        <Experience />
         <Work />
+        <Reviews />
+        <HireMe />
         <Blog/>
         <Contact/>
-        <Reviews />
         <Footer/>
-        <Reviews />
-        <Experience />
-        <Contact/>
-        <Experience />
-        <HireMe />
     </div>
   );
 }
