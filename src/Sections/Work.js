@@ -2,6 +2,10 @@ import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import {Container} from 'react-bootstrap';
 
+// Light box adding method
+import { SRLWrapper } from "simple-react-lightbox";
+
+
 // Import Swiper styles
 import "swiper/swiper.min.css";
 import "swiper/components/effect-coverflow/effect-coverflow.min.css";
@@ -23,21 +27,27 @@ const Work = () => {
     
   return (
     <div className="work">
+      <div className="text">
+        <h5>PORTFOLIO</h5>
+        <h2>My Works</h2>
+      </div>
     <Container>
         <Swiper effect={'coverflow'} grabCursor={true} centeredSlides={true} slidesPerView={'auto'} coverflowEffect={{
     "rotate": 50,
-    "stretch": 0,
-    "slidesPerView" : 3,
+    "stretch": 10,
+    "slidesPerView" : 2,
     "depth": 100,
-    "modifier": 3,
-    "slideShadows": true
+    "modifier": 1,
+    "slideShadows": false
     }} pagination={true} className="mySwiper">
-    <SwiperSlide><img alt="" src={img1} /></SwiperSlide>
-    <SwiperSlide><img alt="" src={img2} /></SwiperSlide>
-    <SwiperSlide><img alt="" src={img3} /></SwiperSlide>
-    <SwiperSlide><img alt="" src={img1} /></SwiperSlide>
-    <SwiperSlide><img alt="" src={img2} /></SwiperSlide>
-    <SwiperSlide><img alt="" src={img3} /></SwiperSlide>
+     <SRLWrapper>
+        <SwiperSlide><img alt="" src={img1} /></SwiperSlide>
+        <SwiperSlide><img alt="" src={img2} /></SwiperSlide>
+        <SwiperSlide><img alt="" src={img3} /></SwiperSlide>
+        <SwiperSlide><img alt="" src={img1} /></SwiperSlide>
+        <SwiperSlide><img alt="" src={img2} /></SwiperSlide>
+        <SwiperSlide><img alt="" src={img3} /></SwiperSlide>
+    </SRLWrapper>
     {/* <SwiperSlide><img alt="" src="https://swiperjs.com/demos/images/nature-2.jpg" /></SwiperSlide> */}
     {/* <SwiperSlide><img alt="" src="https://swiperjs.com/demos/images/nature-3.jpg" /></SwiperSlide> */}
     {/* <SwiperSlide><img alt="" src="https://swiperjs.com/demos/images/nature-1.jpg" /></SwiperSlide>

@@ -7,10 +7,14 @@ import "swiper/components/pagination/pagination.min.css"
 // main css file
 import './index.css';
 import App from './App';
+import SimpleReactLightbox from 'simple-react-lightbox'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SimpleReactLightbox>
+      <App />
+    </SimpleReactLightbox>
   </React.StrictMode>,
   document.getElementById('root')
 );
