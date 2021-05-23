@@ -105,7 +105,6 @@
 
 /* Hero */
 
-
 /* contact form */
 
 .contact {
@@ -483,19 +482,18 @@ h6.slider-user {
 
 /* reviews  */
 
-
 /* footer */
 
-.Footer{
+.Footer {
   display: flex;
- 
+
   padding: 50px;
   justify-content: center;
 }
-.Footer p{
+.Footer p {
   color: #6e7373;
   font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 /* exprence section */
 .expCard {
@@ -549,11 +547,14 @@ p.details.pt-4 {
 
 /* about */
 .about {
-  /* position: absolute;
-  transform: translatey (20%);
-  top: 50%;
-  left: 50%;
-  z-index: 1111111111111; */
+  /* position: absolute; */
+  /* transform: translateY(20%); */
+  /* top: 50%; */
+  /* left: 50%; */
+  position: relative;
+  z-index: 155 !important;
+  margin-top: -200px;
+  height: 400px !important;
 }
 .about .row {
   background-color: white;
@@ -579,14 +580,21 @@ p.details.pt-4 {
 }
 
 .about h3 {
-  font-size: 38px;
-  font-weight: 800;
-  font-family: -webkit-pictograph;
+  font-size: 32px;
+  font-weight: 500;
 }
 .about p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: rgb(170, 170, 170);
-  font-family: "Times New Roman", Times, serif;
+  line-height: 1.9rem;
 }
+
+.about .col-md-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
 /* about */

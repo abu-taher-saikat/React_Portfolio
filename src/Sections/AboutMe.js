@@ -6,9 +6,10 @@ import {
   FaDribbble,
 } from "react-icons/fa";
 
+
 function AboutMe() {
   return (
-    <div style={{ marginTop: "30px" }} className="container about ">
+    <div className="container about ">
       <div
         style={{ width: "70%", margin: "0 auto" }}
         className="p-3 border row"
@@ -22,9 +23,9 @@ function AboutMe() {
             />
           </div>
         </div>
-        <div className=" col-md-7">
+        <div className="col-md-7">
           <h3>About Me</h3>
-          <p>
+          <p className="">
             Passionate designer & developer who loves simplicity in things and
             crafts beautiful user interfaces with love.
           </p>
