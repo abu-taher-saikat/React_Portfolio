@@ -451,3 +451,47 @@ p.details.pt-4 {
   z-index: 0;
 }
 /* paralex section  */
+
+/* about */
+.about {
+  /* position: absolute;
+  transform: translatey (20%);
+  top: 50%;
+  left: 50%;
+  z-index: 1111111111111; */
+}
+.about .row {
+  background-color: white;
+  border-radius: 10px !important;
+}
+.about img {
+  height: 300px;
+  width: 600px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.about ul {
+  display: flex;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+.about ul li {
+  padding-right: 20px;
+  transition: 0.2s ease-in-out;
+}
+.about ul li:hover {
+  color: salmon;
+}
+
+.about h3 {
+  font-size: 38px;
+  font-weight: 800;
+  font-family: -webkit-pictograph;
+}
+.about p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(170, 170, 170);
+  font-family: "Times New Roman", Times, serif;
+}
+/* about */
