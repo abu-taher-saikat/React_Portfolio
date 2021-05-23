@@ -4,6 +4,11 @@
 
 .TopBar {
   border-bottom: 1px solid gray;
+  position: sticky !important;
+  position: -webkit-sticky;
+  z-index: 10;
+  top: 0;
+  background-color: white;
 }
 .TopBar .links {
   justify-content: flex-end;
@@ -31,10 +36,11 @@
 /* Top Bar */
 
 /* Hero */
-/* .hero {
-   height: 100vh;
-   border: 1px solid black; 
-} */
+.hero {
+  /* height: 100vh;
+   border: 1px solid black;  */
+  position: relative;
+}
 
 .hero .mySwiper {
   height: 100vh;
@@ -43,6 +49,50 @@
 .hero .mySwiper .hero-image {
   width: 100%;
 }
+
+.hero .section-head {
+  /* display: grid; */
+  position: absolute;
+  top: 50;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* justify-content: center; */
+  /* align-content: center; */
+  z-index: 5;
+  text-shadow: 2px 2px 5px black;
+}
+.hero .section-head span {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-align: center;
+  display: block;
+  color: white;
+}
+.hero .section-head h1 {
+  font-size: 12vh;
+  color: white;
+}
+
+.hero .swiper-pagination-bullet-active {
+  width: 50px !important;
+}
+
+.hero
+  .swiper-container-vertical
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 7px;
+  width: 30px;
+  height: 4px;
+  border-radius: 1px;
+  background: #fff;
+  transition: 1s;
+  display: block;
+  margin: 20px 0 0 auto;
+}
+
 /* Hero */
 
 /* Work */
@@ -53,14 +103,14 @@
 /* Work */
 
 /* G */
-#root {
+/* #root {
   height: 100%;
 }
 html,
 body {
   position: relative;
   height: 100%;
-}
+} */
 /* 
 body {
   background: #eee;
@@ -71,7 +121,7 @@ body {
   padding: 0;
 } */
 
-.swiper-container {
+/* .swiper-container {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -87,7 +137,7 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
-}
+} */
 
 /* G */
 /* section start */

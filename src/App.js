@@ -7,10 +7,10 @@ import Service from './Sections/Service';
 function App() {
   return (
     <div className="App">
-        <TopBar />
-        <Blog/>
         <Hero></Hero>
+        <TopBar />
         <Service/>
+        <Blog/>
     </div>
   );
 }
