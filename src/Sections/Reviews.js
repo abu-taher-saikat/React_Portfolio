@@ -1,6 +1,7 @@
 import React from "react";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
+import SectionHeader from "../Components/SectionHeader";
 
 // images
 const slideImages = [
@@ -36,12 +37,8 @@ const slideImages = [
 
 function Reviews({ title, reviewsHead, reviews }) {
   return (
-    <div className="slider container">
-      <div className="text-center mt-5 header">
-        <p>{title ? title : "KIND WORDS"}</p>
-        <h3>{reviewsHead ? reviewsHead : "TESTIMONIAL"}</h3>
-        <span className="underlineSlider"></span>
-      </div>
+    <div style={{ marginBottom: "150px" }} className=" slider container">
+      <SectionHeader title="KIND WORDS" sectionHead="Testimonial" />
       <section className="slider text-center">
         <div>
           <Slide easing="ease">

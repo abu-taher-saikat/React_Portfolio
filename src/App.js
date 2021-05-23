@@ -4,6 +4,7 @@ import Blog from './Sections/Blog/Blog.js';
 import Hero from './Sections/Hero';
 import Service from './Sections/Service';
 import Work from './Sections/Work';
+import Experience from "./Components/Experience";
 import Reviews from "./Sections/Reviews";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Work />
         <Blog/>
         <Reviews />
+        <Experience />
     </div>
   );
 }
