@@ -463,6 +463,8 @@ p.details.pt-4 {
 .about .row {
   background-color: white;
   border-radius: 10px !important;
+  -webkit-box-shadow: 0px 24px 40px -6px rgba(202, 202, 202, 0.44);
+  box-shadow: 0px 24px 40px -6px rgba(173, 173, 173, 0.44);
 }
 .about img {
   height: 300px;

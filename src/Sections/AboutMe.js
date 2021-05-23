@@ -9,10 +9,7 @@ import {
 function AboutMe() {
   return (
     <div style={{ marginTop: "30px" }} className="container about ">
-      <div
-        style={{ width: "70%", margin: "0 auto" }}
-        className="p-3 border row"
-      >
+      <div style={{ width: "70%", margin: "0 auto" }} className="p-3 row">
         <div className="col-md-5">
           <div className="img">
             <img
