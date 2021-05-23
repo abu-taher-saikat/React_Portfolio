@@ -105,6 +105,7 @@
 
 /* Hero */
 
+
 /* contact form */
 
 .contact {
@@ -482,6 +483,20 @@ h6.slider-user {
 
 /* reviews  */
 
+
+/* footer */
+
+.Footer{
+  display: flex;
+ 
+  padding: 50px;
+  justify-content: center;
+}
+.Footer p{
+  color: #6e7373;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
 /* exprence section */
 .expCard {
   border: 1px solid rgb(233, 233, 233);
