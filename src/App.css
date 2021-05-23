@@ -107,15 +107,19 @@
 
 /* contact form */
 
-.Form_Header {
+.contact {
+  background: #f7f7f7;
+}
+
+.contact .Form_Header {
   padding-top: 100px;
   line-height: 75px;
   text-align: center;
 }
-.form_my_control input {
+.contact .form_my_control input {
   height: 60px;
 }
-.Form_button {
+.contact .Form_button {
   text-align: center;
   /* width: 100px; */
   padding: 8px 48px;
@@ -124,13 +128,13 @@
   border-radius: 0px;
   border: none;
 }
-.Form_textarea {
+.contact .Form_textarea {
   padding-top: 30px;
 }
-.First_row {
+.contact .First_row {
   padding-top: 30px;
 }
-.form_my_control {
+.contact .form_my_control {
   padding-top: 30px;
 }
 /* Work */
