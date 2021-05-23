@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 /* Top Bar */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* general css  */
+.mbc-10 {
+  margin-bottom: 3rem !important;
+}
+
+/* general css  */
 
 .TopBar {
   border-bottom: 1px solid gray;
@@ -341,8 +351,24 @@ body {
   width: 200px;
 }
 .slider p {
-  color: rgb(43, 43, 43);
+  color: rgb(175 175 175);
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 0px !important;
+  margin: 4px;
 }
+
+.slider h3 {
+  font-family: system-ui;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 0px !important;
+  margin: 5px;
+}
+
 .each-slide > div {
   display: flex;
   align-items: center;
@@ -369,8 +395,43 @@ h5.slider-comment {
   font-family: inherit;
 }
 h6.slider-user {
-  font-size: 14px;
-  color: #5a5959;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 800 !important;
 }
 
 /* reviews  */
+
+/* exprence section */
+.expCard {
+  border: 1px solid rgb(233, 233, 233);
+  padding: 10px;
+  margin: 3rem 10px;
+  border-radius: 10px;
+}
+button.duration.mt-3 {
+  background-color: #fd7565;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+
+h6.position,
+.exr-title {
+  color: #3d3c3c;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: serif;
+  font-size: 18px;
+}
+.exr-title {
+  font-family: inherit;
+  font-size: 22px;
+}
+
+p.details.pt-4 {
+  font-size: 17px;
+  color: gray;
+}
+/* exprence section */

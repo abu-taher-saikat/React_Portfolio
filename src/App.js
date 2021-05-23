@@ -1,4 +1,5 @@
 import "./App.css";
+import Experience from "./Components/Experience";
 import TopBar from "./Components/NavBar";
 import Blog from "./Sections/Blog/Blog.js";
 import Hero from "./Sections/Hero";
@@ -13,6 +14,7 @@ function App() {
       <Service />
       <Blog />
       <Reviews />
+      <Experience />
     </div>
   );
 }
