@@ -95,7 +95,6 @@
 
 /* Hero */
 
-<<<<<<< HEAD
 
 /* contact form */
 
@@ -125,7 +124,6 @@
 .form_my_control{
   padding-top: 30px;
 }
-=======
 /* Work */
 .work .work_img {
   width: 400px;
@@ -453,4 +451,18 @@ h6.slider-user {
 }
 
 /* reviews  */
->>>>>>> 9986da98c8b7e52fd417d4f0523b68aae7d659b6
+
+
+/* footer */
+
+.Footer{
+  display: flex;
+ 
+  padding: 50px;
+  justify-content: center;
+}
+.Footer p{
+  color: #6e7373;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}

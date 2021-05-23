@@ -1,15 +1,13 @@
 import './App.css';
 import TopBar from './Components/NavBar';
 import Blog from './Sections/Blog/Blog.js';
-<<<<<<< HEAD
 import Contact from './Sections/Contact';
 
-=======
 import Hero from './Sections/Hero';
 import Service from './Sections/Service';
 import Work from './Sections/Work';
 import Reviews from "./Sections/Reviews";
->>>>>>> 9986da98c8b7e52fd417d4f0523b68aae7d659b6
+import Footer from './Sections/Footer';
 
 function App() {
   return (
@@ -19,11 +17,9 @@ function App() {
         <Service/>
         <Work />
         <Blog/>
-<<<<<<< HEAD
         <Contact/>
-=======
         <Reviews />
->>>>>>> 9986da98c8b7e52fd417d4f0523b68aae7d659b6
+        <Footer/>
     </div>
   );
 }
