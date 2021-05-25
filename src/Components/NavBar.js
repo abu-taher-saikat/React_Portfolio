@@ -1,9 +1,25 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 
 const TopBar = () => {
+    const [offset, setOffset] = useState(0);
+
+    const scrollFunction  = () => {
+
+    }
+
+    useEffect(() => {
+        window.onscroll = () => {
+          setOffset(window.pageYOffset)
+        }
+        console.log(offset)
+      }, [offset]);
+
+
+
     return (
-        <div className="TopBar">
+        <div style={offset > 800 ? {display : "block"} : {display : "none"}} className="TopBar" onScroll={scrollFunction}>
+            <div className="container">
                 <Navbar  expand="lg" >
                 <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
 
@@ -18,6 +34,7 @@ const TopBar = () => {
                     </Nav>
                 </Navbar.Collapse>
                 </Navbar>
+            </div>
         </div>
     )
 }

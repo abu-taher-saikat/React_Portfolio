@@ -2,10 +2,6 @@ import './App.css';
 import TopBar from './Components/NavBar';
 import Blog from './Sections/Blog/Blog.js';
 import Contact from './Sections/Contact';
-<<<<<<< HEAD
-
-=======
->>>>>>> e069e1afb1caf209cbb1935a90aa0d41931d75d1
 import Hero from './Sections/Hero';
 import Service from './Sections/Service';
 import Work from './Sections/Work';
