@@ -554,7 +554,9 @@ p.details.pt-4 {
   /* left: 50%; */
   position: relative;
   z-index: 155 !important;
-  margin-top: -200px;
+  /* margin-top: -200px; */
+  /* margin-top: -110px; */
+  margin-top: 0px;
   height: 400px !important;
 }
 .about .row {

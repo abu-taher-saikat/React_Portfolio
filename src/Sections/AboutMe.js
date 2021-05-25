@@ -8,6 +8,7 @@ import {
 // import {motion, useViewportScroll, useMotionValue } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import {motion} from 'framer-motion';
 // ..
 AOS.init();
 
@@ -54,7 +55,8 @@ function AboutMe() {
     
 
   return (
-    <div
+    <motion.div
+      whileHover={{y : -200 }}
     data-aos="zoom-in-up"
     style={{ opacity : 1}}
     className={"container about your-class"}>
@@ -95,7 +97,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
