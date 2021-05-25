@@ -598,4 +598,16 @@ p.details.pt-4 {
   align-items: flex-start;
 }
 
+/* .in {
+  opacity: 1;
+  visibility: visible;
+} */
+
+/* .your-class {
+  z-index: 200;
+  position: fixed;
+  bottom: 0;
+  transition: opacity 0.1s ease;
+} */
+
 /* about */
