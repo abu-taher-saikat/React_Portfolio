@@ -6,60 +6,29 @@ import {
   FaDribbble,
 } from "react-icons/fa";
 // import {motion, useViewportScroll, useMotionValue } from 'framer-motion';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-import {motion} from 'framer-motion';
-// ..
-AOS.init();
+
 
 
 
 
 function AboutMe() {
-  // const [offset1, setOffset1] = useState(0);
-  const [opacity, setOpacity] = useState(0);
-
-  // const [name, setName] = useState("");
-
-  // const [scroll, setScroll] = useState(0);
-
+  const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
-      // window.onscroll = () => {
-      //   setOffset1(window.pageYOffset)
-      // }
-      // console.log(offset1)
-      if (typeof window !== "undefined") {
-        window.onscroll = () => {
-          let currentScrollPos = window.pageYOffset;
-          // console.log(`currentScrollPos`, currentScrollPos)
-          // let maxScroll = document.body.scrollHeight - window.innerHeight;
-          // let maxScroll = document.body.scrollIntoView();
-          if(currentScrollPos > 0) {
-            setOpacity(1)
-          }else{
-            setOpacity(0)
-          }
-
-          // if (currentScrollPos > 0 && currentScrollPos < maxScroll) {
-          //   setOpacity({opacity : 1})
-          //   // console.log(currentScrollPos)
-          // } else {
-          //   setOpacity({opacity : 0})
-          // }
-        }
-      }
-    }, [setOpacity]);
+    window.addEventListener("scroll", ()=> {
+      console.log('hi', window.scrollY);
+      setScroll(window.scrollY < 25);
+    })
+      
+    }, []);
 
 
     
 
   return (
-    <motion.div
-      whileHover={{y : -200 }}
-    data-aos="zoom-in-up"
+    <div
     style={{ opacity : 1}}
-    className={"container about your-class about_me"}>
+    className={`container about about_me ${scroll ? "hideit" : "showit"} `}>
       <div
         style={{ width: "70%", margin: "0 auto" }}
         className="p-3 border row p3_style"
@@ -97,7 +66,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
