@@ -1,0 +1,68 @@
+/* get in touch */
+
+@media screen and (max-width: 480px) {
+  .contact-details--panel {
+    margin-bottom: 10px;
+  }
+
+  /* my article */
+  .wrapper{
+    padding: 0px;
+    margin: 0px;
+  }
+  .card{
+    margin: 0px;
+    width: auto;
+    margin-bottom: 17px;
+  }
+  /* testtty */
+  .each-slide{
+    margin: 0px !important;
+    width: 100% !important;
+  }
+  .slide img{
+    width: 67% !important;
+    height: 140px !important;
+  }
+  /* expertise */
+  .for_responsive{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+  }
+  .col_for_responsive{
+
+  }
+  .p-4 {
+    width: 335px !important;
+    padding: 0px !important;
+    margin: -2px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    text-align: center;
+  }
+
+  /* hero swipper */
+  .swiper-container{
+    height: 210px !important;
+  }
+  .section-head{
+    position: absolute !important;
+    top: 172px !important;
+
+  }
+  .hero .section-head h1{
+      font-size: 36px;
+  }
+
+  .about-me{
+    position: relative;
+    top: -55px;
+  }
+  .p3_style{
+    margin: 53px auto !important;
+    width: 100% !important;
+    
+  }
+}

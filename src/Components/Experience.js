@@ -50,8 +50,8 @@ function Experience() {
       <SectionHeader title="MY RESUME" sectionHead="MY EXPERTISES" />
 
       {/* /resume  */}
-      <div className="row mt-5">
-        <div className="col-6">
+      <div className="row mt-5 for_responsive">
+        <div className="col-6 col_for_responsive">
           <h5 className="exr-title">My Experience</h5>
           {exps.map((exp) => (
             <div

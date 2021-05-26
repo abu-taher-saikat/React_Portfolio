@@ -59,10 +59,10 @@ function AboutMe() {
       whileHover={{y : -200 }}
     data-aos="zoom-in-up"
     style={{ opacity : 1}}
-    className={"container about your-class"}>
+    className={"container about your-class about_me"}>
       <div
         style={{ width: "70%", margin: "0 auto" }}
-        className="p-3 border row"
+        className="p-3 border row p3_style"
       >
         <div className="col-md-5">
           <div className="img">
