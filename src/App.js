@@ -2,7 +2,10 @@ import './App.css';
 import TopBar from './Components/NavBar';
 import Blog from './Sections/Blog/Blog.js';
 import Contact from './Sections/Contact';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5c92bfa285333dc8a5f22ad83dc653af1da6aab1
 import Hero from './Sections/Hero';
 import Service from './Sections/Service';
 import Work from './Sections/Work';
