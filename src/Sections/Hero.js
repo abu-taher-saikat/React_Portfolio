@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Image } from "react-bootstrap";
 
 import sliderImage from "../Assets/images/slider3.jpg";
+import sliderImage2 from "../Assets/images/Slide2.jpg";
 import AboutMe from "./AboutMe";
 
 // install Swiper modules
@@ -23,7 +24,7 @@ const Hero = () => {
           <Image className="hero-image" src={sliderImage}></Image>
         </SwiperSlide>
         <SwiperSlide>
-          <Image className="hero-image" src={sliderImage}></Image>
+          <Image className="hero-image" src={sliderImage2}></Image>
         </SwiperSlide>
         <SwiperSlide>
           <Image className="hero-image" src={sliderImage}></Image>
