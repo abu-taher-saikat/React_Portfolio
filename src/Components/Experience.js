@@ -55,7 +55,7 @@ function Experience() {
           <h5 className="exr-title">My Experience</h5>
           {exps.map((exp) => (
             <div
-              style={{ height: "200px", width: "100%" }}
+              style={{ width: "100%" }}
               className="p-4 expCard"
             >
               <h6 className="position">{exp.position}</h6>
@@ -101,7 +101,7 @@ function Experience() {
           <h5 className="exr-title">My Education</h5>
           {educations.map((education) => (
             <div
-              style={{ height: "200px", width: "100%" }}
+              style={{  width: "100%" }}
               className="p-4 expCard"
             >
               <h6 className="position">{education.position}</h6>
